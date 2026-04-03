@@ -1,0 +1,18 @@
+.task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  padding: 0 8px 18px;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .form-inputs {
+    grid-template-columns: 1fr;
+  }
+}

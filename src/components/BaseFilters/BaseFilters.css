@@ -1,0 +1,24 @@
+.base-filters {
+  display: flex;
+  gap: 12px;
+  padding: 0 8px 24px;
+}
+
+.filter-item {
+  background: transparent !important;
+  border: 1px solid var(--border) !important;
+  color: var(--muted) !important;
+  border-radius: 12px !important;
+  padding: 10px 20px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.filter-item--active {
+  background: var(--accent) !important;
+  color: #141414 !important;
+  border-color: var(--accent) !important;
+}

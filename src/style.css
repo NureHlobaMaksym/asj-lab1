@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #08090d;
+  --panel: #1a1b22;
+  --panel-soft: rgba(255, 255, 255, 0.04);
+  --border: #2a2d35;
+  --text: #f4f4f6;
+  --muted: #a4a7b0;
+  --accent: #b184f6;
+  --accent-strong: #9a6fe6;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg);
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #1b1e28 0%, #0c0d12 55%, var(--bg) 100%) fixed;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: clamp(24px, 3vw, 32px);
+  margin: 0;
+  font-weight: 600;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+}
+
+.card {
+  width: min(880px, 100%);
+  background: linear-gradient(180deg, #1c1f27 0%, #181a21 100%);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header {
+  padding: 8px 8px 20px;
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding: 40px 16px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+}
